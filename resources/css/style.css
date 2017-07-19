@@ -1,0 +1,331 @@
+  /* overall */
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h5 {
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+  /*header*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-center {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-background {
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-background {
+  background: firebrick;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* logo section - top part of the header*/
+
+.logo {
+  width: 960px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo h5 {
+  text-transform: capitalize;
+  margin: 0.66rem 0;
+}
+
+.logo img {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 1.5rem;
+  width: auto;
+}
+
+.center {
+  width:  960px;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.new-arrivals {
+  width: 20rem;
+  height: auto;
+  background-color: black;
+  margin-top: 9rem;
+  margin-bottom: 6.5rem;
+}
+
+.new-arrivals h5 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  margin-left: 3rem;
+}
+
+.new-arrivals h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  padding: 0;
+  margin-left: 3rem;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+/*nav line - header */
+
+header nav {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  width: 960px;
+}
+
+header nav a {
+  text-decoration: none;
+}
+
+nav a h5 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* main part */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*products - main part */
+
+.products {
+  width: 960px;
+  height: auto;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.container {
+  border: 4px solid black;
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-image {
+  height: 9rem;
+  width: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.container-image img {
+  max-width: 8em;
+  max-height: 100%;
+  align-self: center;
+}
+
+.container-text {
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+
+.container-text h5{
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* shop-info - main part */
+
+.shop-info {
+  width: 960px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+#location, #hours {
+  width: 35%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-info-heading {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.shop-info-heading h5 {
+  background-color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+
+}
+
+.copyright {
+  width: 960px;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+/*.copyright h5 {
+  text-align: left;
+}*/
+
+@media only screen and (min-width: 1025px) {
+
+  nav span:nth-child(0n+7) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 1024px){
+  nav span:nth-child(-n+6) {
+    display: none;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  #glasses {
+    display: none;
+  }
+
+  .products {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 47%;
+    height: auto;
+  }
+
+  .shop-info {
+    width: 90%;
+    height: auto;
+  }
+      
+  #location, #hours {
+    width: 35%;
+    height: auto;
+  }
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  nav span:nth-child(-n+6) {
+    display: none;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .background-center {
+    height: 15rem;
+  }
+
+  .new-arrivals h2 {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .new-arrivals h5 {
+    font-size: 0.77rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+
+  .products {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .shop-info {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #location, #hours {
+    width: 90%;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .copyright {
+    justify-content: center;
+  }
+
+}
